@@ -4,12 +4,13 @@ exchange_rates = {
     ("EUR", "SEK"): 11.2, ("SEK", "EUR"): 0.089,
     ("USD", "YEN"): 148.5, ("YEN", "USD"): 0.0067,
     ("USD", "SEK"): 10.4, ("SEK", "USD"): 0.096,
-    ("YEN", "SEK"): 0.070, ("SEK", "YEN"): 14.3
+    ("YEN", "SEK"): 0.070, ("SEK", "YEN"): 14.3,
+    ("RUB", "SEK"): 0.011, ("SEK", "RUB"): 0.092, #Russische Rubel exchange rate hinzugefügt
 }
 
 amount = float(input("Betrag: "))
-from_currency = input("Von (EUR, USD, YEN, SEK): ").upper()
-to_currency = input("Nach (EUR, USD, YEN, SEK): ").upper()
+from_currency = input("Von (EUR, USD, YEN, SEK, RUB): ").upper()
+to_currency = input("Nach (EUR, USD, YEN, SEK, RUB): ").upper()
 
 if from_currency == to_currency:
     print("Die Währungen sind gleich, keine Umrechnung nötig.")
